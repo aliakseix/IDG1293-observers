@@ -1,0 +1,50 @@
+:root{
+	--bg-color: antiquewhite;
+	--bg-section-color:  aliceblue;
+}
+
+body{
+	background-color: var(--bg-color);
+	color: rgb(68, 67, 67);
+	font-size: 20px;
+}
+
+section{
+	min-height: 70vh;
+	padding: 5vw;
+	margin: 1vw 12vw;
+	background-color: var(--bg-section-color);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+	transition: all 2s;
+	gap: 1vmin;
+}
+
+.hidden-opacity{
+	opacity: 0;
+}
+
+.hidden-translate{
+	transform: translateX(-100%);
+}
+
+.hidden-color{
+	filter: brightness(0);
+}
+
+.hidden-blur{
+	filter: blur(15px);
+}
+
+.hidden-font{
+	font-size: 0px;
+}
+
+.hidden-all{
+	opacity: 0;
+	filter: blur(15px);
+	transform: translateX(-100%);
+}
